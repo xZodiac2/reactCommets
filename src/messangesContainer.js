@@ -14,7 +14,7 @@ export default function MessagesContainer() {
 
     function send(event) {
         messageText.trim()
-        if (event.code === 'Enter' && event.target.value != '' && event.target.value != '\n') {
+        if (event.code === 'Enter' && event.target.value !== '' && event.target.value !== '\n') {
             setMessages([
                 ...messages,
                 messageText
